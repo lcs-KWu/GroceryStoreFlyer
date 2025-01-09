@@ -16,7 +16,7 @@ struct FoodItemsListView: View {
             Image(currentItem.image)
                 .resizable()
                 .scaledToFit()
-            
+            Text("\(currentItem.price)$ per \(currentItem.size)")
         }
         .navigationTitle(departmentToShow.name)
     }
